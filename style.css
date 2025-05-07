@@ -1,0 +1,141 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f9f9f9;
+    margin: 0;
+    padding-left: 200px;
+    padding-right: 200px;
+    /* padding: 20px; */
+}
+
+
+.navbar {
+    background-color: #5dd477;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;   /*for making a items appear just after the mysite*/
+    padding: 15px 30px;
+    border-radius: 12px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    height: 40px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    margin-right: 100px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;       
+    gap: 30px;   
+    padding-left: 20px;    
+    padding-right: 20px;    
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+label {
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 5px;
+    font-size: 16px;
+    padding-right: 10px;
+}
+
+  
+.container {
+    max-width: 1000px;
+    margin: auto;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    /* padding-left: 400px;
+    padding-right: 400px; */
+}
+  
+h1 {
+    text-align: left;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+  
+.business, .form, .actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.business{
+    margin-top: 20px;
+}
+
+.business input, .form input, .actions input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+  
+button {
+    padding: 10px 20px;
+    background: #036bd9;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+button:hover {
+    background: #0c529c
+}
+  
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+  
+table th, table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid grey
+}
+  
+table th {
+    background: #5dd477; 
+    color: white;
+    border-radius: 1px;
+}
+    
+  
+#invoiceOutput {
+    margin-top: 30px;
+    padding: 20px;
+    border: 2px dashed #5dd477;
+    background: #f0f8ff;
+}
+  
+.invoice-header, .invoice-summary {
+    margin-bottom: 20px;
+}
+.invoice-header h2, .invoice-summary h3 {
+    margin: 0;
+}
+.invoice-summary {
+    text-align: right;
+}
