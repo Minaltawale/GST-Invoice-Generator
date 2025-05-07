@@ -8,9 +8,9 @@ GST Invoice Generator is a web based application built using HTML, CSS, and Java
 4. Responsive design for both desktop and mobile devices
 
 # Technologies Used
-1] HTML for structuring the content
-2] CSS for styling and responsiveness
-3] JavaScript for interactive features and calculations
+- HTML for structuring the content
+- CSS for styling and responsiveness
+- JavaScript for interactive features and calculations
 
 # How to Use
 - Clone the repository from GitHub.
