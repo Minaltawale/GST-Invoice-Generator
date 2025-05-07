@@ -20,7 +20,7 @@ GST Invoice Generator is a web based application built using HTML, CSS, and Java
 
 # Installation
 Clone the project using:
-git clone https://github.com/yourusername/GST-Invoice-Generator.git
+git clone https://github.com/Minaltawale/GST-Invoice-Generator.git
 
 # License
 This project is licensed under the MIT License.
