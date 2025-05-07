@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GST Invoice Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Container">
+        <nav class="navbar">
+            <div class="logo">MySite</div>
+            <ul class="nav-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>GST Invoice Generator</h1>
+        <hr style="border: none; height: 2.5px; background-color: #5dd477">
+        <div class="business">
+            <label>Business Name :</label>
+            <input type="text" id="businessName" placeholder="Enter Business Name">
+            <label>Customer Name :</label>
+            <input type="text" id="customerName" placeholder="Enter your Name">
+        </div>
+
+        <div class="business">
+            <label>Issue Date :</label>
+            <input type="date" id="invoiceDate">
+            <label>GST Number :</label>
+            <input type="number" id="gstNumber" placeholder="Enter GST Number">
+        </div>
+        
+        <div class="form">
+            <input type="text" id="itemName" placeholder="Item Name">
+            <input type="number" id="itemQuantity" placeholder="Quantity" min="1">
+            <input type="number" id="itemPrice" placeholder="Price per Unit" min="0.01" step="0.01">
+            <button onclick="addItem()">Add Item</button>
+        </div>
+
+        <table id="itemTable">
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Items will appear here -->
+            </tbody>
+        </table>
+        
+        <div class="actions">
+            <label>GST %: <input type="number" id="gstRate" value="18"></label>
+            <button onclick="generateInvoice()">Generate Invoice</button>
+        </div>
+        
+        <div id="invoiceOutput">
+            <!-- Final Invoice will be shown here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
